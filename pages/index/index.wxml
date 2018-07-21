@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+<view class="tui-picker-content">
+    <view class="tui-picker-name">日期时间选择器</view>
+    <picker mode="time" >
+      <view class="tui-picker-detail">
+        选择日期时间: {{date}}
+      </view>
+    </picker>
+  </view>
+  <view class="tui-picker-content">
+    <view class="tui-picker-name">日期时间选择器</view>
+    <picker mode="multiSelector" value="{{meDateTime}}" bindchange="meSelectorChange" bindcolumnchange="meSelectorColumnChange" bindcancel="meSelectorCancel" range="{{meSelectorResource}}">
+      <view class="tui-picker-detail">
+        选择日期时间: {{date}}
+      </view>
+    </picker>
+  </view>
+</view>
